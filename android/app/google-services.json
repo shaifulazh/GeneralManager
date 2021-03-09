@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "887300145536",
+    "project_id": "gmproto-63554",
+    "storage_bucket": "gmproto-63554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887300145536:android:03fe7020df89326f894165",
+        "android_client_info": {
+          "package_name": "com.generalmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887300145536-bv7f6sq2835o3ubaaq2067iqrr4tnlok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.generalmanager",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "887300145536-1bt9rt28jet8fimdpigbfscncrfv9bfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwpwd2YV2Sq323hHNLxarpbGM_TXFERuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887300145536-1bt9rt28jet8fimdpigbfscncrfv9bfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "887300145536-8dpc0kvgpqn7pap9q0go9p8nb5cb8f74.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.GmProto"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887300145536:android:3b13e9790aaaab74894165",
+        "android_client_info": {
+          "package_name": "com.genmanadro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887300145536-ke57nk1tv3lmnuok01bi1ckjp71qv2d1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genmanadro",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "887300145536-1bt9rt28jet8fimdpigbfscncrfv9bfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwpwd2YV2Sq323hHNLxarpbGM_TXFERuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887300145536-1bt9rt28jet8fimdpigbfscncrfv9bfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "887300145536-8dpc0kvgpqn7pap9q0go9p8nb5cb8f74.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.GmProto"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887300145536:android:faa2a78789c2a604894165",
+        "android_client_info": {
+          "package_name": "com.gmproto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887300145536-vqt643ickhvmhv3scqa2m9veuk7lsbc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmproto",
+            "certificate_hash": "a0156e9381998859df753a59ff48ff9da63c69d6"
+          }
+        },
+        {
+          "client_id": "887300145536-1bt9rt28jet8fimdpigbfscncrfv9bfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwpwd2YV2Sq323hHNLxarpbGM_TXFERuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887300145536-1bt9rt28jet8fimdpigbfscncrfv9bfj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "887300145536-8dpc0kvgpqn7pap9q0go9p8nb5cb8f74.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.GmProto"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
