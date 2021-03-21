@@ -10,7 +10,10 @@ export default function TripleMenu({
   setGroupMenu,
   group,
   activeMenu,
-  setActiveMenu
+  setActiveMenu,
+  menuBackgroundColorFirst,
+  menuBackgroundColorMiddle,
+  menuBackgroundColorLast
 }) {
 
 
@@ -30,7 +33,11 @@ export default function TripleMenu({
             style={[
               styles.button,
               styles.borderButton,
-              activeMenu===first ? styles.activeButton : null
+              {
+                backgroundColor : menuBackgroundColorFirst,
+              },
+              // activeMenu===first ? styles.activeButton : null,
+              
             ]}>
             <Text>{first}</Text>
           </View>
@@ -49,7 +56,12 @@ export default function TripleMenu({
             style={[
               styles.button,
               styles.borderButton,
-              activeMenu===middle ? styles.activeButton : null
+              {
+                backgroundColor : menuBackgroundColorMiddle
+                ,
+                borderBottomColor:menuBackgroundColorLast
+              },
+              // activeMenu===middle ? styles.activeButton : null,
            
             ]}>
             <Text>{middle}</Text>
@@ -69,7 +81,12 @@ export default function TripleMenu({
             style={[
               styles.button,
               styles.borderButton,
-              activeMenu===last ? styles.activeButton : null
+              {
+                backgroundColor : menuBackgroundColorLast,
+                borderBottomColor:menuBackgroundColorLast
+              },
+              // activeMenu===last ? styles.activeButton : null,
+
             ]}>
             <Text>{last}</Text>
           </View>
@@ -81,20 +98,20 @@ export default function TripleMenu({
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#ffbe0f',
+    
 
     alignItems: 'center',
-    padding: 5,
+    padding: 7,
   },
   borderButton: {
     borderTopWidth: 1,
     borderLeftWidth: 1,
     borderRightWidth: 1,
-    borderBottomWidth: 3,
+    
   },
   activeButton: {
-    backgroundColor: 'darkorange',
+    backgroundColor: 'white',
 
-    borderBottomColor:'darkorange'
+    borderBottomColor:'white'
   },
 });

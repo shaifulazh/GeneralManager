@@ -9,6 +9,7 @@ export default function TopDisplayMenu({
   setGroupMenu,
   activeMenu,
   setActiveMenu,
+
 }) {
   return (
     <View style={{flex: 1, flexDirection: 'column'}}>
@@ -22,6 +23,9 @@ export default function TopDisplayMenu({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#950E17'
+          menuBackgroundColorMiddle='#EA202C'
+          menuBackgroundColorLast='#F37C84'
         />
       ) : null}
       {groupMenu < 3 ? (
@@ -34,6 +38,9 @@ export default function TopDisplayMenu({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#59761E'
+          menuBackgroundColorMiddle='#98CA32'
+          menuBackgroundColorLast='#C0DF81'
         />
       ) : null}
       {groupMenu < 2 ? (
@@ -46,6 +53,9 @@ export default function TopDisplayMenu({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#448D76'
+          menuBackgroundColorMiddle='#79BEA8'
+          menuBackgroundColorLast='#E7F3EF'
         />
       ) : null}
       {groupMenu < 1 ? (
@@ -58,6 +68,9 @@ export default function TopDisplayMenu({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#AE0D7A'
+          menuBackgroundColorMiddle='#F033B4'
+          menuBackgroundColorLast='#FDDDFC'
         />
       ) : null}
     </View>

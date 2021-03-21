@@ -9,6 +9,7 @@ export default function FooterDisplay({
   setGroupMenu,
   activeMenu,
   setActiveMenu,
+
 }) {
   return (
     <View style={{flex: 1, flexDirection: 'column'}}>
@@ -22,6 +23,10 @@ export default function FooterDisplay({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#59761E'
+          menuBackgroundColorMiddle='#98CA32'
+          menuBackgroundColorLast='#C0DF81'
+          
         />
       ) : null}
       {groupMenu > 1 ? (
@@ -34,6 +39,10 @@ export default function FooterDisplay({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#448D76'
+          menuBackgroundColorMiddle='#79BEA8'
+          menuBackgroundColorLast='#E7F3EF'
+          
         />
       ) : null}
       {groupMenu > 0 ? (
@@ -46,6 +55,10 @@ export default function FooterDisplay({
           setGroupMenu={setGroupMenu}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          menuBackgroundColorFirst='#AE0D7A'
+          menuBackgroundColorMiddle='#F033B4'
+          menuBackgroundColorLast='#FDDDFC'
+          
         />
       ) : null}
     </View>

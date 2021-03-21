@@ -1,107 +1,27 @@
-import React from 'react';
-import {useState} from 'react';
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
-import ContentDisplay from './ContentDisplay';
-import FooterDisplay from './FooterDisplay';
-import TopDisplayMenu from './TopDisplayMenu';
-// import ContentDisplay from './src/ContentDisplay'
-// import FooterDisplay from './src/FooterDisplay'
-// import TopDisplayMenu from './src/TopDisplayMenu'
+// In App.js in a new project
 
-export default function App() {
-  const [groupMenu, setGroupMenu] = useState(0);
-  const [pressAction, setPressAction] = useState('MARKET');
-  const menuFlex = selectMenu(groupMenu);
-  const [activeMenu, setActiveMenu] = useState();
-  console.log(activeMenu)
+import React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import MainDisplay from './MainDisplay';
+import MarketScreen from './Screen/MarketScreen';
+import OrderScreen from './Screen/OrderScreen';
+
+
+
+const Stack = createStackNavigator();
+
+function App() {
   return (
-    <SafeAreaView
-      style={[
-        styles.container,
-        {
-          flexDirection: 'column',
-        },
-      ]}>
-      <View style={[menuFlex.upflex, {backgroundColor: 'red'}]}>
-        <TopDisplayMenu
-          groupMenu={groupMenu}
-          setPressAction={setPressAction}
-          setGroupMenu={setGroupMenu}
-          activeMenu={activeMenu}
-          setActiveMenu={setActiveMenu}
-        />
-      </View>
-      <View style={{flex: 80, backgroundColor: 'darkorange'}}>
-        <ContentDisplay pressAction={pressAction} />
-      </View>
-      <View style={[menuFlex.downflex, {backgroundColor: 'green'}]}>
-        <FooterDisplay
-          groupMenu={groupMenu}
-          setPressAction={setPressAction}
-          setGroupMenu={setGroupMenu}
-          activeMenu={activeMenu}
-          setActiveMenu={setActiveMenu}
-        />
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Main" options={{ title: 'Kebun Hijau Enterprise - Vincente M.' }} >{props=><MainDisplay {...props} />}</Stack.Screen>
+        <Stack.Screen name="Market" >{props=><MarketScreen {...props} />}</Stack.Screen>
+        <Stack.Screen name="Order" >{props=><OrderScreen {...props} />}</Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-
-  flex20: {
-    flex: 20,
-  },
-  flex10: {
-    flex: 10,
-  },
-
-  flex15: {
-    flex: 15,
-  },
-  flex5: {
-    flex: 5,
-  },
-  flex0: {
-    flex: 0,
-  },
-});
-
-const marketOrderSaleFlex = {
-  upflex: styles.flex20,
-  downflex: styles.flex0,
-};
-
-const stockManningSupplyFlex = {
-  upflex: styles.flex15,
-  downflex: styles.flex5,
-};
-
-const todoScheduleReminderFlex = {
-  upflex: styles.flex10,
-  downflex: styles.flex10,
-};
-
-const BorrowLendExpenseFlex = {
-  upflex: styles.flex5,
-  downflex: styles.flex15,
-};
-
-const selectMenu = (groupMenu) => {
-  switch (groupMenu) {
-    case 0:
-      return marketOrderSaleFlex;
-    case 1:
-      return stockManningSupplyFlex;
-    case 2:
-      return todoScheduleReminderFlex;
-    case 3:
-      return BorrowLendExpenseFlex;
-
-    default:
-      return marketOrderSaleFlex;
-  }
-};
+export default App;
